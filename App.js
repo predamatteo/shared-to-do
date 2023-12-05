@@ -7,12 +7,14 @@ import { retrieveRoom } from './util/storage';
 import AddRoom from './components/AddRoom';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer} from '@react-navigation/native';
-import Controller from './components/Controller';
+//import Controller from './components/Controller';
+import supabase from './util/supabaseClient';
 
 
 const Stack = createNativeStackNavigator()
 
 export default function App() {
+  console.log(supabase.schema);
   return (
     <SafeAreaView style={{flex:1, marginTop:60}}>
       <StatusBar/>
