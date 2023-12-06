@@ -14,7 +14,7 @@ const MainScreen = () => {
     const [visibleAddModal, setVisibleAddModal] = useState(false);
     const [visibleDeleteModal, setVisibleDeleteModal] = useState(false);
     const [fetchedExpenses, setFetchedExpense] = useState();
-
+    /*
     function onPressStartItemHandler(item) {
         setVisibleDeleteModal(true)
         setPress(!press)
@@ -31,7 +31,7 @@ const MainScreen = () => {
         deleteRoom();
         console.log('stanza eliminata')
     }
-
+*/
     return (
         <View style={{ flex: 1, backgroundColor: 'white' }}>
             <View style={{ flex: 10 }}>
@@ -45,7 +45,7 @@ const MainScreen = () => {
                         </>
                     } />
             </View>
-            <Button title='cancella stanza' onPress={prez} />
+            <Button title='cancella stanza' /*onPress={prez}*/ />
             <View style={{ flex: 1 }}>
                 <TouchableOpacity style={[tw`flex-row px-10`, { borderColor: 'lightblue', borderWidth: 1, flex: 1, alignItems: 'center' }]} onPress={() => setVisibleAddModal(true)}>
                     <Icon name='add' color={'lightblue'} size={60} />
